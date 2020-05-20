@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./resources/top-navbar.css">
+    <link rel="stylesheet" type="text/css" href="./resources/styles.css">
+    <link rel="stylesheet" type="text/css" href="./resources/dist/aos.css">
+</head>
+<title>moostache.info</title>
+
+<body>
+    <nav id="top-navbar">
+        <a class="top-nav-link" href="#">Home</a>
+        <a class="top-nav-link" href="#about">About</a>
+        <a class="top-nav-link" href="#projects">Projects</a>
+        <a class="top-nav-link" href="./animal-crossing/index.html">Animal Crossing</a>
+    </nav>
+    <section id="welcome" data-aos="fade-in" data-aos-duration="1000">
+        <h1><span class="welcome-h1-moostache">moostache</span><span class="welcome-h1-dot">.</span><span
+                class="welcome-h1-info">info</span></h1>
+    </section>
+    <section id="about" class="content-section" data-aos="fade-up">
+        <h1>About</h1>
+        <p>This is full of my junk, to use as a project and test case as I learn responsive web design. There's
+            resources for fun stuff, like all the notes I use for Animal Crossing, and a smattering of other stuff, like
+            current and future projects and a random page about a truck. There's probably nothing here for you, but if
+            you're bored, carry on.</p>
+    </section>
+    <div class="separator"></div>
+    <section id="projects" class="content-section" data-aos="fade-up">
+        <h1>Projects</h1>
+        <div class="project-grid">
+            <a href="">
+                <div class="project-grid-item">
+                    <img class="project-grid-item-img" src="./resources/images/bg.jpg">
+                    <div class="project-grid-item-desc">moostache.info</div>
+                </div>
+            </a>
+            <a href="./animal-crossing/index.html">
+                <div class="project-grid-item">
+                    <img class="project-grid-item-img" src="./resources/images/acnh_nook.jpg">
+                </div>
+            </a>
+            <a href="">
+                <div class="project-grid-item">
+                    <img class="project-grid-item-img" src="./resources/images/bg2.jpg">
+                </div>
+            </a>
+        </div>
+    </section>
+    <div class="separator_two"></div>
+    <script src="./resources/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+</body>
+
+</html>

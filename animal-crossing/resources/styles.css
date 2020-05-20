@@ -14,22 +14,23 @@ header {
 h1 {
   font-size: 2em;
   font-weight: bold;
-  color: rgb(217, 48, 93);
+  color: rgb(0, 255, 255);
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: bold;
+  color: rgb(40, 255, 40);
 }
 
 a {
   text-decoration: none;
-  color: rgb(217, 48, 93);
+  color: rgb(220, 50, 90);
   transition: color 0.25s ease;
 }
 
 a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 0);
 }
 
 table {
@@ -70,6 +71,11 @@ tr:nth-child(odd) {
 
 #main-doc a {
   font-weight: bold;
+  color: rgb(255, 255, 0);
+}
+
+#main-doc a:hover {
+  color: rgb(220, 50, 90);
 }
 
 #main-doc h2 {
@@ -97,6 +103,8 @@ tr:nth-child(odd) {
 
 .main-section-figcaption {
   background-color: rgb(40, 40, 40);
+  font-size: 0.8em;
+  color: rgb(255, 255, 0);
   padding: 0.5em;
   text-align: center;
 }
