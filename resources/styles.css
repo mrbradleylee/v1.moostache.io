@@ -193,7 +193,9 @@ h1 {
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen 
+  and (max-width: 460px)
+  and (-webkit-device-pixel-ratio: 3) {
   #welcome {
     height: 50vh;
   }
