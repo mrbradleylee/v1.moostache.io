@@ -154,3 +154,17 @@ strong {
     font-size: 1em;
   }
 }
+
+/* iphone xs */
+@media only screen
+  and (device-width: 375px)
+  and (device-height: 812px)
+  and (-webkit-device-pixel-ratio: 3) {
+    #navbar {
+      display: none;
+    }
+    #main-doc {
+      max-width: 95%;
+      margin: 0;
+    }
+  }
