@@ -41,6 +41,7 @@ a:hover {
   line-height: 1.5;
   max-width: 60%;
   text-align: left;
+  padding-bottom: 2em;
 }
 
 #main-doc a {
@@ -99,13 +100,16 @@ strong {
   text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
+/* overriding global colors */
+
+#footer, #navbar {
+  background-color: rgb(50, 50, 50);
+  position: fixed;
+}
+
+@media screen and (min-width: 900px) {
   body {
     font-size: 1.5em;
-  }
-  #navbar {
-    background-color: rgb(30, 30, 30);
-    position: fixed;
   }
 }
 
