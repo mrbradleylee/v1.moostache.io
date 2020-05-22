@@ -18,7 +18,6 @@ a {
 
 a:hover {
   color: rgb(0, 255, 0);
-  font-weight: 900;
 }
 
 p {
@@ -29,12 +28,6 @@ p {
 h1 {
   color: rgb(0, 255, 255);
   font-size: 2em;
-}
-
-#top-navbar {
-  background: none;
-  border: none;
-  position: absolute;
 }
 
 #welcome {
@@ -147,7 +140,7 @@ h1 {
 
 .separator {
   background-image: url(./images/bg2.jpg);
-  background-position: center;
+  background-position: left;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -156,7 +149,7 @@ h1 {
 
 .separator_two {
   background-image: url(./images/bg3.jpg);
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -198,13 +191,6 @@ h1 {
     min-width: 250px;
   }
 
-  #top-navbar {
-    position: absolute;
-    top: 0;
-    background-color: rgb(30, 30, 30);
-    width: 100%;
-    height: 11em;
-  }
   #welcome {
     height: 100vh;
   }
@@ -224,13 +210,6 @@ h1 {
     min-width: 250px;
   }
 
-  #top-navbar {
-    position: absolute;
-    top: 0;
-    background-color: rgb(30, 30, 30);
-    width: 100%;
-    height: 11em;
-  }
   #welcome {
     height: 100vh;
   }

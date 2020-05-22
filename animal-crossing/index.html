@@ -4,24 +4,24 @@
 <title>ACNH: Reference - moostache.info</title>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="../resources/top-navbar.css">
     <link rel="stylesheet" type="text/css" href="./resources/styles.css">
     <link rel="stylesheet" type="text/css" href="../resources/dist/aos.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="icon" href="../resources/images/favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/89bec204aa.js" crossorigin="anonymous"></script>
+    <script src="../resources/nav.js"></script>
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>Animal Crossing Reference</a></header>
-        <ul>
-            <li><a class="navbar-home-link" href="../index.html">
-                    << moostache.info</a>
-            </li>
-            <li><a href="#flower_guide">Flower Guide</a></li>
-            <li><a href="#turnip_mania">Turnip Mania</a></li>
-            <li><a href="#tool_durability">Tool Durability</a></li>
-            <li><a href="#diy_bug_islands">DIY Bug Islands</a></li>
-        </ul>
+    <nav class="top-navbar" id="navbar">
+        <a href="../index.html">moostache.info</a>
+        <a href="#flower_guide">Flower Guide</a>
+        <a href="#turnip_mania">Turnip Mania</a>
+        <a href="#tool_durability">Tool Durability</a>
+        <a href="#diy_bug_islands">Bug Islands</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fas fa-hamburger"></i></a>
     </nav>
     <main id="main-doc">
         <section class="main-section" data-aos="fade-in" data-aos-duration="500" id="flower_guide">
@@ -183,54 +183,15 @@
                 same durability as the "iron" versions and do
                 not include the Golden tools. As you can see, Golden tools outside of the watering can are largely not
                 worth.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tool</th>
-                        <th>Flimsy</th>
-                        <th>Variant</th>
-                        <th>Golden</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Axe</td>
-                        <td>40</td>
-                        <td>100</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <td>Shovel</td>
-                        <td>40</td>
-                        <td>100</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <td>Net</td>
-                        <td>10</td>
-                        <td>30</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>Fishing Rod</td>
-                        <td>8-10</td>
-                        <td>30</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>Watering Can</td>
-                        <td>20</td>
-                        <td>60</td>
-                        <td>180</td>
-                    </tr>
-                    <tr>
-                        <td>Slingshot</td>
-                        <td>-</td>
-                        <td>20</td>
-                        <td>60</td>
-                    </tr>
-                </tbody>
-            </table>
+            <code>
+                    Tool: Flimsy, Variant, Golden<br>
+                    Axe: 40, 100, 200<br>
+                    Shovel: 40, 100, 200<br>
+                    Net: 10, 30, 90<br>
+                    Fishing Rod: 8-10, 30, 90<br>
+                    Watering Can: 20, 60, 180<br>
+                    Slingshot: -, 20, 60
+                </code>
             <h2>Exceptions to note</h2>
             <p>There are a few exceptions to note, namely watering cans. The flimsy version will water a single spot,
                 where the variant will do a 2×3 spot, and the golden will do a 3×3 spot. This is probably the only case
