@@ -1,6 +1,6 @@
 body {
   background: rgb(30, 30, 30);
-  text-align: left;
+  text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: rgb(255, 255, 255);
@@ -8,8 +8,10 @@ body {
 }
 
 header {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 900;
+  padding-top: 1em;
+  color: rgb(220, 50, 90);
 }
 
 h1 {
@@ -35,9 +37,10 @@ a:hover {
 }
 
 #main-doc {
-  padding-left: 1em;
+  display: inline-block;
   line-height: 1.5;
-  max-width: 80%;
+  max-width: 60%;
+  text-align: left;
 }
 
 #main-doc a {
@@ -49,19 +52,15 @@ a:hover {
   color: rgb(220, 50, 90);
 }
 
-#main-doc h2 {
-  padding-left: 1.25em;
-}
-
-#main-doc p {
-  padding-left: 3em;
-}
-
 #main-doc img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: scale-down;
+}
+
+.main-section {
+  padding-top: 1em;
 }
 
 .main-section-desc {
@@ -70,8 +69,7 @@ a:hover {
 
 .main-section-figure {
   display: inline-block;
-  max-width: 80%;
-  margin: 0.5em 0.5em 0.5em 3em;
+  max-width: 90%;
   border: 2px solid rgb(40, 40, 40);
 }
 
@@ -87,77 +85,48 @@ code {
   background-color: rgb(50, 50, 50);
   display: inline-block;
   font-size: 1.25em;
-  margin-left: 3em;
   padding: 1em;
   line-height: 1.25;
-  width: auto;
+  width: 90%;
 }
 
 strong {
   font-style: italic;
 }
 
-@media screen and (max-width: 900px) {
-  #navbar {
-    position: relative;
-    width: 95%;
-    height: auto;
-    border: none;
-  }
+.to-top {
+  margin-top: 1em;
+  text-align: center;
+}
 
-  #main-doc {
-    width: 80%;
-    max-width: 80%;
-    margin: 0;
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 1.5em;
+  }
+  #navbar {
+    background-color: rgb(30, 30, 30);
+    position: fixed;
   }
 }
 
 /* iphone xs */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  #navbar {
-    position: relative;
-    width: 95%;
-    height: auto;
-    border: none;
-  }
-
   #main-doc {
-    width: 90%;
-    max-width: 90%;
+    width: 95%;
+    max-width: 95%;
     margin: 0;
-  }
-
-  table {
-    margin: 0;
-    text-align: center;
-  }
-
-  th {
-    padding: 0;
   }
 }
 
 /* iphone 6/7/8 */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
-  #navbar {
-    position: relative;
-    width: 95%;
-    height: auto;
-    border: none;
-  }
-
   #main-doc {
-    width: 90%;
-    max-width: 90%;
+    width: 95%;
+    max-width: 95%;
     margin: 0;
   }
 
-  table {
-    margin: 0;
-    text-align: center;
-  }
-
-  th {
-    padding: 0;
+  #main-doc p {
+    text-align: justify;
   }
 }
