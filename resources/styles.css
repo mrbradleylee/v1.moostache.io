@@ -24,14 +24,14 @@ header {
 
 h1 {
   font-size: 2em;
-  font-weight: 900;
-  color: rgb(0, 255, 0);
+  font-weight: 700;
+  color: rgb(0, 255, 255);
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 700;
-  color: rgb(0, 255, 255);
+  color: rgb(0, 255, 0);
 }
 
 a {
@@ -135,7 +135,7 @@ code strong {
 
 .navbar a:hover:first-child {
   color: rgb(220, 50, 90);
-  text-decoration: underline;
+  cursor: default;
 }
 
 /* Hide the link that should open and close the top-navbar on small screens */
