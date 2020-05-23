@@ -1,12 +1,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <html>
+<title>Project Website - moostache.info</title>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../resources/top-navbar.css">
     <link rel="stylesheet" type="text/css" href="../resources/styles.css">
     <link rel="stylesheet" type="text/css" href="../resources/dist/aos.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inter:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="icon" href="../resources/images/favicon/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/89bec204aa.js" crossorigin="anonymous"></script>
     <script src="../resources/nav.js"></script>
@@ -14,16 +14,17 @@
 <title>moostache.info</title>
 
 <body>
-    <nav class="top-navbar" id="navbar">
+    <nav class="navbar" id="nav">
         <a href="../" onclick="hamburger()">moostache.info</a>
+        <a href="#what" onclick="hamburger()">What</a>
+        <a href="#why" onclick="hamburger()">Why</a>
+        <a href="#how" onclick="hamburger()">How</a>
         <a href="javascript:void(0);" class="icon" onclick="hamburger()">
             <i class="fas fa-hamburger"></i></a>
     </nav>
-    <section id="welcome" data-aos="fade-in" data-aos-duration="1000">
-        <h1><span class="welcome-h1-moostache">moostache.info</span><span class="welcome-h1-dot"> - </span><span
-                class="welcome-h1-info">project site</span></h1>
-    </section>
-    <section id="about" class="content-section" data-aos="fade-in">
+    <main id="main" class="main" data-aos="fade-in" data-aos-duration="1000">
+        <header>Project Use Case Website</header>
+    <section id="what" class="section" data-aos="fade-in">
         <h1>What?</h1>
         <p>If you made it this far, you're somewhat curious as to what you're reading. This is a website that servers
             two use cases, including a use case for front end development with an emphasis on responsive web design. If
@@ -31,10 +32,14 @@
             of responsive web design is that the content is legible across any device that it's being consumed on. The
             majority of what you're seeing is built primarily on CSS, with some JS thrown in here for good looks. The
             goal is to be able to format somewhat useful content while remaining lightweight.</p>
+    </section>
+    <section id="why" class="section" data-aos="fade-in">
         <h1>Why?</h1>
         <p>Most of the why has already been covered, but honestly, cause I had an rPi laying around and wanted to put it
             to good use and learn some stuff. I always found myself creating docs to store links for resources that I
             need, might as well make a project out of it to document progress and expand the junk in my brain. This site initially started as a Wordpress site to host random information, but the eventual goal is where we are now, hosting static pages.</p>
+    </section>
+    <section id="how" class="section" data-aos="fade-in">
         <h1>How?</h1>
         <p>The nerdy stuff...<br>
             Again, two uses cases, the first being learning RWD. The second is the rPi. Let's talk about the
@@ -49,9 +54,10 @@
             To keep track of general server health, a TIG stack (Telegraf, InfluxDB, Grafana) is also being managed
             through Docker containers.</p>
     </section>
+    </main>
     <section id="footer">
         <div>
-            <p>&copy 2020 <a href="#">moostache.info</a></p>
+            <p>&copy <a href="../">moostache.info</a></p>
         </div>
         <div>
             <p><i class="far fa-hand-peace"></i></p>

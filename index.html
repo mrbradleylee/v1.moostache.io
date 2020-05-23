@@ -3,10 +3,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./resources/top-navbar.css">
     <link rel="stylesheet" type="text/css" href="./resources/styles.css">
+    <link rel="stylesheet" type="text/css" href="./resources/landing.css">
     <link rel="stylesheet" type="text/css" href="./resources/dist/aos.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inter:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/89bec204aa.js" crossorigin="anonymous"></script>
     <script src="./resources/nav.js"></script>
@@ -14,17 +14,16 @@
 <title>moostache.info</title>
 
 <body>
-    <nav class="top-navbar" id="navbar">
+    <nav class="navbar" id="nav">
         <a href="#" onclick="hamburger()">moostache.info</a>
         <a href="#about" onclick="hamburger()">About</a>
         <a href="#projects" onclick="hamburger()">Projects</a>
-        <a href="./animal-crossing/index.html" onclick="hamburger()">Animal Crossing</a>
+        <a href="./animal-crossing/" onclick="hamburger()">Animal Crossing</a>
         <a href="javascript:void(0);" class="icon" onclick="hamburger()">
             <i class="fas fa-hamburger"></i></a>
     </nav>
+    <main>
     <section id="welcome" data-aos="fade-in" data-aos-duration="1000">
-        <h1><span class="welcome-h1-moostache">moostache</span><span class="welcome-h1-dot">.</span><span
-                class="welcome-h1-info">info</span></h1>
     </section>
     <section id="about" class="content-section" data-aos="fade-in">
         <h1>About</h1>
@@ -58,6 +57,7 @@
         </div>
     </section>
     <div class="separator_two" data-aos="fade-in"></div>
+    </main>
     <section id="footer">
         <div>
             <p>&copy 2020 <a href="#">moostache.info</a></p>

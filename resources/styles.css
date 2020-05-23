@@ -1,3 +1,5 @@
+/* RAW ELEMENTS STYLING [0001] */
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +8,7 @@ body {
   background: rgb(30, 30, 30);
   display: block;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   border: none;
   margin: 0;
@@ -14,209 +16,227 @@ body {
   min-width: 350px;
 }
 
+header {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: rgb(220, 50, 90);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 900;
+  color: rgb(0, 255, 0);
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgb(0, 255, 255);
+}
+
 a {
-  color: rgb(255, 255, 255);
   text-decoration: none;
+  color: rgb(255, 255, 0);
   transition: color 0.25s ease;
 }
 
 a:hover {
-  color: rgb(0, 255, 0);
+  color: rgb(255, 155, 30);
 }
 
 p {
-  color: white;
-  padding: 0;
+  color: rgb(255, 255, 255);
 }
 
-h1 {
-  color: rgb(0, 255, 255);
-  font-size: 2em;
+code {
+  color: rgb(255, 255, 255);
+  background-color: rgb(50, 50, 50);
+  display: inline-block;
+  font-size: 1.25em;
+  padding: 1em;
+  line-height: 1.25;
+  width: 90%;
 }
 
-#welcome {
-  background-image: url(./images/bg.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  font-size: 2em;
+code strong {
+  font-style: italic;
 }
 
-#welcome:after {
-  content: " ";
-  z-index: 1;
+/* CLASS STYLING */
+/* -- main content sections */
+
+.main {
+  display: inline-block;
+  line-height: 1.5;
+  max-width: 60%;
+  text-align: left;
+  padding-bottom: 2em;
+}
+
+.main img {
   display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.35);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
 }
 
-#welcome h1 {
-  font-size: 2em;
-  font-weight: 900;
-  text-decoration: underline;
-  color: white;
-  z-index: 2;
-  text-shadow: 2px 2px rgb(0, 0, 0);
-  margin: 0 0 1em 0;
-  letter-spacing: -0.1em;
+.section {
+  padding-top: 1em;
 }
-.welcome-h1-moostache {
+
+.desc {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
+.figure {
+  display: inline-block;
+  max-width: 90%;
+  border: 2px solid rgb(40, 40, 40);
+}
+
+.figcaption {
+  background-color: rgb(40, 40, 40);
+  font-size: 0.8em;
+  color: rgb(255, 255, 0);
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  overflow: hidden;
+  z-index: 5;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  transition: color 0.5s ease;
+}
+
+.navbar a:first-child {
   color: rgb(220, 50, 90);
 }
 
-.welcome-h1-dot {
-  color: rgb(255, 255, 0);
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: rgb(0, 255, 255);
+  text-decoration: none;
 }
 
-.welcome-h1-info {
+.navbar a:hover:first-child {
+  color: rgb(220, 50, 90);
+  text-decoration: underline;
+}
+
+/* Hide the link that should open and close the top-navbar on small screens */
+.navbar .icon {
+  display: block;
+  float: right;
+}
+
+i.fas {
+  color: rgb(255, 255, 255);
+  transition: color 0.5s ease;
+}
+
+i.fas:hover {
   color: rgb(0, 255, 255);
 }
 
-.content-section {
-  background-color: rgb(30, 30, 30);
-  display: inline-flex;
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* global footer */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
-  height: auto;
+  height: 5em;
 }
 
-.content-section h1 {
-  text-decoration: underline;
-  font-weight: 700;
+#footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
-.content-section a:hover {
+#footer a:hover {
   color: rgb(0, 255, 0);
-  text-decoration: underline;
-  font-weight: 900;
+  text-decoration: none;
 }
 
-#about,
-#projects {
-  justify-content: center;
-  flex-direction: column;
-  padding: 3em 0 3em 0;
+#footer p {
+  margin: 0 1em;
 }
 
-#about p {
-  padding: 1em 10em;
+
+.to-top {
+  margin-top: 1em;
+  text-align: center;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1em;
-  width: 90%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 4em;
-}
+/* MEDIA QUERIES */
 
-.project-grid-item {
-  background-color: rgb(30, 30, 30);
-  margin: auto;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 2px;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
-}
-
-.project-grid-item-img {
-  display: inline-block;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.project-grid-item-desc {
-  height: 3.5em;
-  overflow: hidden;
-  color: white;
-}
-
-.separator {
-  background-image: url(./images/bg2.jpg);
-  background-position: left;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
-
-.separator_two {
-  background-image: url(./images/bg3.jpg);
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
-
-#navbar {
-  position: fixed;
-  background-color: rgb(30, 30, 30);
-}
-
-/** commenting out second overlay, for good looks
-.separator:after {
-  content: " ";
-  z-index: 1;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-}
-**/
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   body {
     font-size: 1.5em;
   }
 }
 
+/* iphone xs */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  body {
-    min-width: 250px;
-  }
-
-  #welcome {
-    height: 100vh;
-  }
-
-  .separator,
-  .separator_two {
-    height: 50vh;
-  }
-
-  #about p {
-    padding: 1em;
+  #main {
+    width: 95%;
+    max-width: 95%;
+    margin: 0;
   }
 }
 
+/* iphone 6/7/8 */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
-  body {
-    min-width: 250px;
+  #main {
+    width: 95%;
+    max-width: 95%;
+    margin: 0;
   }
 
-  #welcome {
-    height: 100vh;
-  }
-
-  .separator,
-  .separator_two {
-    height: 50vh;
-  }
-
-  #about p {
-    padding: 1em;
+  #main p {
+    text-align: justify;
   }
 }
