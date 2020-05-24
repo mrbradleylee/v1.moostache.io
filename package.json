@@ -1,26 +1,8 @@
 {
   "name": "moostache.info",
   "version": "1.0.0",
-  "description": "RWD project website",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sergey",
-    "dev": "sergey --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrbradleylee/moostache.info.git"
-  },
-  "keywords": [],
-  "author": "blee",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mrbradleylee/moostache.info/issues"
-  },
-  "homepage": "https://github.com/mrbradleylee/moostache.info#readme",
-  "dependencies": {
-    "sergey": "0.0.13"
-  },
-  "devDependencies": {}
+  "repository": "https://github.com/mrbradleylee/moostache.info.git",
+  "author": "mrbradleylee <47981698+mrbradleylee@users.noreply.github.com>",
+  "license": "MIT"
 }
