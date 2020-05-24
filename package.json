@@ -4,5 +4,12 @@
   "main": "index.html",
   "repository": "https://github.com/mrbradleylee/moostache.info.git",
   "author": "mrbradleylee <47981698+mrbradleylee@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sergey": "^0.0.13"
+  },
+  "scripts": {
+    "start": "sergey",
+    "dev": "sergey --watch"
+  }
 }
