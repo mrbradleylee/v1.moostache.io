@@ -1,0 +1,22 @@
+{
+    "machine": {
+        "host": "192.168.50.50",
+        "username": "pi",
+        "password": "Creeper@123"
+    },
+    "directories": [
+        {
+            "source": "./public",
+            "destination": "/home/pi/html"
+        }
+    ],
+    "files": [
+        {
+            "source": "./public/index.html",
+            "destination": "/home/pi/html/index.html"
+        }
+    ],
+    "commands": [
+        "sudo ufw status > /home/pi/iran.txt"
+    ]
+}
