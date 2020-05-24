@@ -103,7 +103,7 @@ code strong {
   text-align: center;
 }
 
-/* NAVBAR */
+/* NAVBAR (including navicon styling) */
 .navbar {
   overflow: hidden;
   z-index: 5;
@@ -144,6 +144,7 @@ code strong {
   float: right;
 }
 
+/** testing dynamic icon links
 i.fas {
   color: rgb(255, 255, 255);
   transition: color 0.5s ease;
@@ -152,7 +153,7 @@ i.fas {
 i.fas:hover {
   color: rgb(0, 255, 255);
 }
-
+**/
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). */
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
@@ -197,7 +198,7 @@ i.fas:hover {
 }
 
 #footer a:hover {
-  color: rgb(0, 255, 0);
+  color: rgb(255, 155, 30); 
   text-decoration: none;
 }
 
