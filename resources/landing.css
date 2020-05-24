@@ -96,13 +96,8 @@
     min-width: 250px;
   }
 
-  #welcome {
-    height: 100vh;
-  }
-
-  .separator,
-  .separator_two {
-    height: 50vh;
+  #welcome, .separator, .separator_two {
+    background-attachment: scroll;
   }
 
   #about p {
@@ -115,13 +110,8 @@
     min-width: 250px;
   }
 
-  #welcome {
-    height: 100vh;
-  }
-
-  .separator,
-  .separator_two {
-    height: 50vh;
+  #welcome, .separator, .separator_two {
+    background-attachment: scroll;
   }
 
   #about p {
