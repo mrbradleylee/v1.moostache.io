@@ -1,17 +1,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <html>
+
+<sergey-import src="header" />
+
 <title>ACNH: Reference - moostache.info</title>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="../resources/styles.css">
-    <link rel="stylesheet" type="text/css" href="../resources/dist/aos.css">
-    <link href='https://fonts.googleapis.com/css?family=Inter:400,700,900' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="../resources/images/favicon/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/89bec204aa.js" crossorigin="anonymous"></script>
-    <script src="../resources/nav.js"></script>
-</head>
-
 <body>
     <nav class="navbar" id="nav">
         <a href="#" onclick="hamburger()">moostache.info</a>
@@ -279,23 +272,8 @@
             <div class="to-top"><a href="#top"><i class="fas fa-arrow-circle-up"></i></a></div>
         </section>
     </main>
-    <section id="footer">
-        <div>
-            <p>&copy 2020 <a href="../index.html">moostache.info</a></p>
-        </div>
-        <div>
-            <p><i class="far fa-hand-peace"></i></p>
-        </div>
-        <div>
-            <p><a href="#"><i class="fas fa-arrow-circle-up"></i></a></p>
-        </div>
-    </section>
-    <script src="../resources/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            easing: 'ease-in-out-sine'
-        });
-    </script>
+<sergey-import src="footer" />
+<sergey-import src="script-aos-init" />
 </body>
 
 </html>
