@@ -22,7 +22,5 @@
   "dependencies": {
     "sergey": "0.0.13"
   },
-  "devDependencies": {
-    "simple-ssh-deploy": "^1.0.1"
-  }
+  "devDependencies": {}
 }
