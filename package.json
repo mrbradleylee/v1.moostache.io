@@ -1,7 +1,7 @@
 {
-  "name": "moostache.info",
+  "name": "moostache.io",
   "version": "1.0.0",
-  "description": "moostache.info",
+  "description": "moostache.io",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrbradleylee/moostache.info.git"
+    "url": "git+https://github.com/mrbradleylee/moostache.io.git"
   },
   "author": "blee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mrbradleylee/moostache.info/issues"
+    "url": "https://github.com/mrbradleylee/moostache.io/issues"
   },
-  "homepage": "https://github.com/mrbradleylee/moostache.info#readme",
+  "homepage": "https://github.com/mrbradleylee/moostache.io#readme",
   "devDependencies": {
     "sergey": "0.0.13"
   },
