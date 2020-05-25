@@ -16,8 +16,8 @@
 
 <body>
     <nav class="navbar" id="nav">
-        <a href="#" onclick="hamburger()">moostache.info</a>
-        <!--        <a href="#projects" onclick="hamburger()">Projects</a> -->
+        <a onclick="hamburger()"><span>&lt;/</span>moostache.info<span>&gt;</span></a>
+        <a href="#projects" onclick="hamburger()">Projects</a>
         <a href="./animal-crossing/" onclick="hamburger()">Animal Crossing</a>
         <a href="javascript:void(0);" class="icon" onclick="hamburger()">
             <i class="fas fa-hamburger"></i></a>
@@ -28,14 +28,13 @@
         <section id="what" class="section" data-aos="fade-in">
             <h1>What?</h1>
             <p>If you made it this far, you're somewhat curious as to what you're reading. This is a website that
-                servers
-                two use cases, including a use case for front end development with an emphasis on responsive web design.
+                serves
+                two use cases, primarily being a use case for front end development with an emphasis on responsive web design.
                 If
                 you're reading this on a phone, hopefully it's legible and stuff isn't all over the place. The whole
                 point
                 of responsive web design is that the content is legible across any device that it's being consumed on.
-                The
-                majority of what you're seeing is built primarily on CSS, with some JS thrown in here for good looks.
+                This is 99% built on purely HTML and CSS, with some JS thrown in here for good looks.
                 The
                 goal is to be able to format somewhat useful content while remaining lightweight.</p>
         </section>
@@ -58,13 +57,12 @@
                 architecture:<br><br>
                 Front end written completely in VSCode/neovim as I go back to my old school vi roots.<br>
                 Versioning and commits are managed through GitHub via VSCode.<br>
-                New builds are deployed on commit through CI pipelines.<br><br>
+                New builds are deployed on commit through Sergey SSG and node.js deployment scripts.<br><br>
                 Back end technologies include the host machine, a Raspberry Pi 2 running Raspbian Stretch.<br>
-                Web server is nginx, with reverse proxy HTTPS redirect.<br>
-                SSL certs are managed automatically through certbot and letsencrypt.<br>
-                Both are leveraging Docker containers, managed with Compose.<br><br>
+                We're served using nginx, with a reverse proxy HTTPS redirect, and SSL certs are managed automatically through certbot and letsencrypt.<br>
+                Both are leveraging Docker containers, managed with Compose for easy configuration changes.<br><br>
                 To keep track of general server health, a TIG stack (Telegraf, InfluxDB, Grafana) is also being managed
-                through Docker containers.</p>
+                through Docker Compose.</p>
         </section>
         <div class="to-top"><a href="#top"><i class="fas fa-arrow-circle-up"></i></a></div>
     </main>

@@ -112,6 +112,12 @@ code strong {
 }
 
 /* Style the links inside the navigation bar */
+.navbar span {
+  display: inline-block;
+  color: rgb(220, 50, 90);
+  transition: color 0.5s ease;
+}
+
 .navbar a {
   display: block;
   float: left;
@@ -135,13 +141,17 @@ code strong {
 }
 
 .navbar a:hover:first-child {
-  color: rgb(220, 50, 90);
+  color: rgb(255, 255, 255);
   cursor: default;
+}
+
+.navbar a:hover:first-child span {
+  color: rgb(255, 155, 30);
 }
 
 /* Hide the link that should open and close the top-navbar on small screens */
 .navbar .icon {
-  display: block;
+  display: none;
   float: right;
 }
 
