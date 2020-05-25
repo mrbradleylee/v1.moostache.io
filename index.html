@@ -15,13 +15,9 @@
 <title>moostache.io</title>
 
 <body>
-    <nav class="navbar" id="nav">
-        <a onclick="hamburger()"><span>&lt;/</span>moostache.io<span>&gt;</span></a>
-        <a href="#projects" onclick="hamburger()">Projects</a>
-        <a href="./animal-crossing/" onclick="hamburger()">Animal Crossing</a>
-        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-            <i class="fas fa-hamburger"></i></a>
-    </nav>
+
+    <sergey-import src="nav" />
+
     <section id="header" data-aos="fade-in" data-aos-duration="1000">
     </section>
     <main id="main" class="main">
@@ -29,7 +25,8 @@
             <h1>What?</h1>
             <p>If you made it this far, you're somewhat curious as to what you're reading. This is a website that
                 serves
-                two use cases, primarily being a use case for front end development with an emphasis on responsive web design.
+                two use cases, primarily being a use case for front end development with an emphasis on responsive web
+                design.
                 If
                 you're reading this on a phone, hopefully it's legible and stuff isn't all over the place. The whole
                 point
@@ -59,7 +56,8 @@
                 Versioning and commits are managed through GitHub via VSCode.<br>
                 New builds are deployed on commit through Sergey SSG and node.js deployment scripts.<br><br>
                 Back end technologies include the host machine, a Raspberry Pi 2 running Raspbian Stretch.<br>
-                We're served using nginx, with a reverse proxy HTTPS redirect, and SSL certs are managed automatically through certbot and letsencrypt.<br>
+                We're served using nginx, with a reverse proxy HTTPS redirect, and SSL certs are managed automatically
+                through certbot and letsencrypt.<br>
                 Both are leveraging Docker containers, managed with Compose for easy configuration changes.<br><br>
                 To keep track of general server health, a TIG stack (Telegraf, InfluxDB, Grafana) is also being managed
                 through Docker Compose.</p>
