@@ -13,7 +13,6 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  min-width: 350px;
 }
 
 header {
@@ -68,9 +67,10 @@ code strong {
 .main {
   display: inline-block;
   line-height: 1.5;
-  max-width: 60%;
+  max-width: 100%;
   text-align: left;
   padding-bottom: 2em;
+  margin: 0 1em;
 }
 
 .main img {
@@ -81,6 +81,7 @@ code strong {
 }
 
 .section {
+  display: inline-block;
   padding-top: 1em;
 }
 
@@ -124,7 +125,7 @@ code strong {
 }
 
 .navbar a:first-child {
-  color: rgb(255, 155, 30);
+  color: rgb(255, 255, 255);
 }
 
 /* Change the color of links on hover */
@@ -154,8 +155,8 @@ i.fas:hover {
   color: rgb(0, 255, 255);
 }
 **/
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). */
-@media screen and (max-width: 600px) {
+/* When the screen is less than 700 pixels wide, hide all links, except for the first one ("Home"). */
+@media screen and (max-width: 700px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -166,7 +167,7 @@ i.fas:hover {
 }
 
 /* The "responsive" class is added with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar.responsive {
     position: relative;
   }
@@ -214,30 +215,12 @@ i.fas:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   body {
     font-size: 1.5em;
   }
-}
 
-/* iphone xs */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  #main {
-    width: 95%;
-    max-width: 95%;
-    margin: 0;
-  }
-}
-
-/* iphone 6/7/8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
-  #main {
-    width: 95%;
-    max-width: 95%;
-    margin: 0;
-  }
-
-  #main p {
-    text-align: justify;
+  .main {
+    max-width: 60%;
   }
 }
