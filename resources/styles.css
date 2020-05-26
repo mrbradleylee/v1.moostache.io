@@ -273,6 +273,10 @@ When the screen is less than 600 pixels wide, hide all links, except for the fir
   margin: 0 1em;
 }
 
+#footer span {
+  color: rgb(255, 155, 30);
+}
+
 .to-top {
   margin-top: 1em;
   text-align: center;
