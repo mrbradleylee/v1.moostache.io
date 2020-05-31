@@ -66,7 +66,12 @@
     </main>
     <div class="footer-top" data-aos="fade-in"></div>
     <sergey-import src="footer" />
-    <sergey-import src="script-aos-init" />
+    <script src="./resources/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
 </body>
 
 </html>
