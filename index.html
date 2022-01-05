@@ -1,0 +1,101 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./resources/styles.css">
+    <link rel="stylesheet" type="text/css" href="./resources/landing.css">
+    <link rel="stylesheet" type="text/css" href="./resources/dist/aos.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter:400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/89bec204aa.js" crossorigin="anonymous"></script>
+    <script src="./resources/nav.js"></script>
+</head>
+
+<title>moostache.io</title>
+
+<body>
+
+    <nav class="navbar" id="nav">
+    <a onclick="hamburger()"><span>//</span>moostache.io</a>
+    <a href="https://moostache.io/v1/" onclick="hamburger()"><i class="fas fa-home"></i></a>
+    <a href="https://moostache.io" onclick="hamburger()">Back to Current</a>
+    <div class="dropnavbar">
+        <button class="dropnavbar-btn">Animal Crossing</button>
+        <div class="dropnavbar-content">
+            <a href="./animal-crossing.html#flower-guide" onclick="hamburger()">Flower Guide</a>
+            <a href="./animal-crossing.html#turnip-mania" onclick="hamburger()">Turnip Mania</a>
+            <a href="./animal-crossing.html#tool-durability" onclick="hamburger()">Tool Durability</a>
+            <a href="./animal-crossing.html#diy-bug-islands" onclick="hamburger()">DIY Bug Islands</a>
+            <a href="./animal-crossing.html#art-checker" onclick="hamburger()">Art Checker</a>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+        <i class="fas fa-hamburger"></i></a>
+</nav>
+
+    <section id="header" data-aos="fade-in" data-aos-duration="1000">
+    </section>
+    <main id="main" class="main">
+        <section id="what" class="section" data-aos="fade-in">
+            <h1>What?</h1>
+            <p>If you made it this far, you're somewhat curious as to what you're reading. This is a website that
+                serves
+                two use cases, primarily being a use case for front end development with an emphasis on responsive web
+                design.
+                If
+                you're reading this on a phone, hopefully it's legible and stuff isn't all over the place. The whole
+                point
+                of responsive web design is that the content is legible across any device that it's being consumed on.
+                This is 99% built on purely HTML and CSS, with some JS thrown in here for good looks.
+                The
+                goal is to be able to format somewhat useful content while remaining lightweight.</p>
+        </section>
+        <div class="to-top"><a href="#top"><i class="fas fa-arrow-circle-up"></i></a></div>
+        <section id="why" class="section" data-aos="fade-in">
+            <h1>Why?</h1>
+            <p>Most of the why has already been covered, but honestly, cause I had an rPi laying around and wanted to
+                put it
+                to good use and learn some stuff. I always found myself creating docs to store links for resources that
+                I
+                need, might as well make a project out of it to document progress and expand the junk in my brain. This
+                site initially started as a Wordpress site to host random information, but the eventual goal is where we
+                are now, hosting static pages.</p>
+        </section>
+        <div class="to-top"><a href="#top"><i class="fas fa-arrow-circle-up"></i></a></div>
+        <section id="how" class="section" data-aos="fade-in">
+            <h1>How?</h1>
+            <p>The nerdy stuff...<br>
+                Again, two uses cases, the first being learning RWD. The second is the rPi. Let's talk about the
+                architecture:<br><br>
+                Front end written completely in VSCode/neovim as I go back to my old school vi roots.<br>
+                Versioning and commits are managed through GitHub via VSCode.<br>
+                New builds are deployed on commit through Sergey SSG and node.js deployment scripts.<br><br>
+                Back end technologies include the host machine, a Raspberry Pi 2 running Raspbian Stretch.<br>
+                We're served using nginx, with a reverse proxy HTTPS redirect, and SSL certs are managed automatically
+                through certbot and letsencrypt.<br>
+                Both are leveraging Docker containers, managed with Compose for easy configuration changes.<br><br>
+                To keep track of general server health, a TIG stack (Telegraf, InfluxDB, Grafana) is also being managed
+                through Docker Compose.</p>
+        </section>
+        <div class="to-top"><a href="#top"><i class="fas fa-arrow-circle-up"></i></a></div>
+    </main>
+    <div class="footer-top" data-aos="fade-in"></div>
+    <section id="footer">
+    <div>
+        <p>&copy;<a href="#">moostache.io v1</a>&nbsp;<i class="fas fa-hand-peace"></i></p>
+    </div>
+    <div>
+        <p><span>/</span>find me: <a href="https://github.com/mrbradleylee/" target="_blank"><i class="fab fa-github"></i>&nbsp;</a><a href="https://codepen.io/mrbradleylee" target="_blank"><i class="fab fa-codepen"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>/</span>top: <a href="#"><i
+                    class="fas fa-arrow-circle-up"></i></a></p>
+    </div>
+</section>
+        <script src="./resources/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+</body>
+
+</html>
