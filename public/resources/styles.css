@@ -1,0 +1,302 @@
+/* RAW ELEMENTS STYLING [0001] */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(30, 30, 30);
+  display: block;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: rgb(220, 50, 90);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(0, 255, 255);
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgb(0, 255, 0);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: rgb(255, 155, 30);
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+code {
+  color: rgb(255, 255, 255);
+  background-color: rgb(50, 50, 50);
+  display: inline-block;
+  font-size: 1.25em;
+  padding: 1em;
+  line-height: 1.25;
+  width: 90%;
+}
+
+code strong {
+  font-style: italic;
+}
+
+/* CLASS STYLING */
+/* -- main content sections */
+
+.main {
+  display: inline-block;
+  line-height: 1.5;
+  max-width: 100%;
+  text-align: left;
+  padding-bottom: 2em;
+  margin: 0 1em;
+}
+
+.main img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
+
+.section {
+  display: inline-block;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.desc {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
+.figure {
+  display: inline-block;
+  max-width: 90%;
+  border: 2px solid rgb(40, 40, 40);
+}
+
+.figcaption {
+  background-color: rgb(40, 40, 40);
+  font-size: 0.8em;
+  color: rgb(255, 255, 0);
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* NAVBAR (including navicon styling) */
+.navbar {
+  overflow: hidden;
+  z-index: 5;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar span {
+  display: inline-block;
+  color: rgb(220, 50, 90);
+  transition: color 0.5s ease;
+}
+
+.navbar a {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 0.7em 0.8em;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  transition: color 0.5s ease;
+}
+
+.navbar a:first-child {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: rgb(0, 255, 255);
+  text-decoration: none;
+}
+
+.navbar a:hover:first-child {
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+.navbar a:hover:first-child span {
+  color: rgb(255, 155, 30);
+}
+
+/* Hide the link that should open and close the top-navbar on small screens */
+.navbar .icon {
+  display: none;
+  float: right;
+}
+
+/* dropdown div class */
+.dropnavbar {
+  float: left;
+  overflow: hidden;
+}
+
+/* dropdown buttons */
+.dropnavbar .dropnavbar-btn {
+  font-size: 0.8em;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: rgb(255, 255, 255);
+  padding: 0.8em 0.8em;
+  margin: 0;
+}
+
+.dropnavbar-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  z-index: 6;
+}
+
+.dropnavbar-content a {
+  float: none;
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+  padding: 0.7em 1em;
+  display: block;
+  font-weight: 400;
+  text-align: left;
+}
+
+.dropnavbar-content a:first-child {
+  font-weight: 400;
+}
+
+.dropnavbar-content a:hover:first-child {
+  color: rgb(255, 155, 30);
+}
+
+.dropnavbar-content a:hover {
+  color: rgb(255, 155, 30);
+}
+
+.dropnavbar:hover .dropnavbar-btn {
+  color: rgb(0, 255, 255);
+}
+
+.dropnavbar:hover .dropnavbar-content {
+  display: block;
+}
+
+/** begin responsive menu config
+When the screen is less than 600 pixels wide, hide all links, except for the first one. **/
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropnavbar .dropnavbar-btn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  /* The "responsive" class is added with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropnavbar {
+    float: none;
+  }
+  .navbar.responsive .dropnavbar-content {
+    position: relative;
+  }
+  .navbar.responsive .dropnavbar-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* global footer */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  font-size: 80%;
+}
+
+#footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: rgb(255, 155, 30);
+  text-decoration: none;
+}
+
+#footer p {
+  margin: 0 1em;
+}
+
+#footer span {
+  color: rgb(255, 155, 30);
+}
+
+.to-top {
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    max-width: 30em;
+  }
+}
