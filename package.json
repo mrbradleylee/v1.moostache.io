@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/mrbradleylee/moostache.io#readme",
   "devDependencies": {
-    "sergey": "0.0.13"
+    "sergey": "^0.0.4"
   },
   "dependencies": {
-    "npm": "^6.14.5",
+    "npm": "^7.20.6",
     "start": "^5.1.0"
   }
 }
